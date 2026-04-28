@@ -60,13 +60,6 @@ toolchain bundle and the aarch64-zephyr-elf cross-compiler connected.
 See the [Zephyr SDK README](https://github.com/canonical/zephyr-sdk) for the
 full build workflow and environment setup.
 
-### Verify from the command line
-
-```bash
-workshop shell
-aarch64-zephyr-elf-gcc --version
-```
-
 ---
 
 ## Plugs (resources this SDK consumes)
