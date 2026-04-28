@@ -20,9 +20,9 @@ sdks:
     channel: latest/stable
   - name: zephyr
     channel: 4.4/stable
-  - name: zephyr-arm64
-    channel: 1.0.1/stable
   - name: zephyr-sdk-ng
+    channel: 1.0.1/stable
+  - name: zephyr-arm64
     channel: 1.0.1/stable
 connections:
   - plug: zephyr:sdk-ng
