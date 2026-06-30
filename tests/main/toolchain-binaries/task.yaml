@@ -9,7 +9,11 @@ restore: |
 
 execute: |
   workshop exec -- test -x /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-gcc
+  workshop exec -- test -x /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-g++
   workshop exec -- test -x /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-ld
+  workshop exec -- test -x /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-as
+  workshop exec -- test -x /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-objcopy
+  # The compiler must actually run.
   workshop exec -- /var/lib/workshop/sdk/zephyr-arm64/bin/aarch64-zephyr-elf-gcc --version
 
 debug: |
